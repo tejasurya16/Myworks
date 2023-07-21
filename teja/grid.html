@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(500px,auto);
+            
+        }
+        .item-1-container,.items{
+            background-color: lightcoral;
+            border: 3px green solid;
+            border-radius: 3px;
+            
+        }
+
+
+        
+        #item-1{
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        .item-1-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+        .nested-item{
+            border:3px greenyellow solid;
+            border-radius: 3px;
+            background-color: lightgreen;
+        }
+    </STYLE>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1-container" id="item-1">
+        <div class="nested-item">dabbeme dabba </div>
+        <div class="nested-item">dabbeme dabba </div>
+        <div class="nested-item">dabbeme dabba </div>
+    </div>
+        <div class="items" id="item-2">dabba2</div>
+        <div class="items">dabba3</div>
+        <div class="items">DABBA4</div>
+        <div class="items">dabba5</div>
+    </div>
+</body>
+</html>

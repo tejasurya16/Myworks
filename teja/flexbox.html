@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            padding: 0 20px 30px 0;
+            line-height:1.4;
+        }
+        .box{
+            display: flex;
+            width:100%;
+            height: 500px;
+             border: 2px slateblue solid;
+            flex-wrap: wrap-reverse;
+            align-content: space-between;
+            
+        }
+        .set-footdiv{
+            width: 75px;
+            height: 75px;
+            background-color: lightskyblue;
+            border: 2px solid darkblue;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+        #flex-item-1box{
+            
+            /*flex-basis: 200px;*/
+            flex-grow: 2;
+            background-color: lightpink;
+
+
+        }
+        #flex-item-2box{
+            flex-shrink: 3;
+            background-color: lightskyblue;
+        }
+        #flex-item-3box{
+            background-color: lightgreen;
+            
+        }
+        #flex-item-4box{
+            background-color: darkkhaki;
+        }
+        #flex-item-5box{
+            background-color: lightcoral;
+            
+        }
+    </style>
+</head>
+<body><div class="box">   
+    <div class="set-footdiv" id="flex-item-1box">dabba1</div>
+    <div class="set-footdiv" id="flex-item-2box">dabba2</div>
+    <div class="set-footdiv" id="flex-item-3box">dabba3</div>
+    <div class="set-footdiv" id="flex-item-4box">dabba4</div>
+    <div class="set-footdiv" id="flex-item-5box">dabba5</div>
+    <div class="set-footdiv" id="flex-item-6box">dabba6</div>
+    <div class="set-footdiv" id="flex-item-7box">dabba7</div>
+    <div class="set-footdiv" id="flex-item-8box">dabba8</div>
+    <div class="set-footdiv" id="flex-item-9box">dabba9</div>
+    <div class="set-footdiv" id="flex-item-10box">dabba10</div>
+</div>
+</body>
+</html>
